@@ -2,6 +2,7 @@ This is a Python class for an n-gram character level language model. It also imp
 
 Example Usage
 
+```python
 # Get the language model ready
 n_gram = 5
 lang_model = Ngram(n_gram)
@@ -18,3 +19,4 @@ with open("lots_of_different_english.txt", 'r') as fd:
             total_preds += 1
             lang_model.read(char) # Remember to tell the language model what you just saw
 print("Five Gram with Stupid Backoff Accuracy: {:.4}%".format(100 * correct_preds/total_preds))
+```
